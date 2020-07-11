@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <!--<group android:id="@+id/grp1" android:checkableBehavior="single" >-->
+    <item
+        android:id="@+id/c_password"
+        android:icon="@drawable/password"
+        android:iconTint="#39af0e"
+        android:title="Change Password" />
+        <item
+            android:id="@+id/c_pin"
+
+            android:iconTint="#8b0e42"
+            android:icon="@drawable/pin"
+            android:title="Change Pin" />
+    <!--<item-->
+        <!--android:id="@+id/c_export"-->
+
+        <!--android:iconTint="#8b0e42"-->
+        <!--android:icon="@drawable/ic_export_excel"-->
+        <!--android:title="Export In Excel" />-->
+    <!--</group>-->
+
+    <!--<group android:id="@+id/grp2" android:checkableBehavior="single" >-->
+
+    <!--</group>-->
+    <!--<group android:id="@+id/grp3" android:checkableBehavior="single" >-->
+
+    <!--</group>-->
+
+</menu>

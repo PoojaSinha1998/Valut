@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Vault</string>
+    <string name="name">Name</string>
+    <string name="hint_password">Password</string>
+    <string name="label_remember_me">Remember Me</string>
+    <string name="button_login">Login</string>
+    <string name="label_forgot_password">Forget Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new_records">Add New Records</string>
+    <string name="you">You signed up</string>
+    <string name="success">successfully.</string>
+    <string name="congrats">Congratulations</string>
+    <string name="ok">Ok</string>
+    <string name="username">Username</string>
+</resources>

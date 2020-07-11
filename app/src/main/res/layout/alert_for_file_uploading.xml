@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:padding="2dp"
+  android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="5dp">
+        <TextView
+
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            style="@android:style/Widget.Holo.ActionButton.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Downloaded file location"/>
+        <!--<ImageView-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/information_two"/>-->
+        <TextView
+            android:id="@+id/path"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            style="@android:style/Widget.Holo.ActionButton.TextButton"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Are you sure you want to exit?"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+
+
+            <TextView
+                android:id="@+id/dai_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:text="@string/ok"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:textSize="15dp" />
+
+          </RelativeLayout>
+
+
+
+</LinearLayout>

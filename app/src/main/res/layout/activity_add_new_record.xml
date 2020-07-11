@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    tools:context=".Activities.AddNewRecord">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/red"
+        app:title="Add new record"
+        app:titleTextColor="@color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:fitsSystemWindows="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Name"
+                android:textColor="@color/DrakGray_one"
+                android:theme="@style/TextLabel"
+                tools:visibility="visible"> </TextView>
+
+                <EditText
+
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/urlName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:paddingLeft="10dp"
+                    android:maxLength="25"
+                    android:background="@drawable/linear_layout_onebackground"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/DrakGray_one"
+                android:textSize="17sp"
+                android:text="@string/username"
+                android:theme="@style/TextLabel"
+                tools:visibility="visible"/>
+
+                <EditText
+
+                    android:id="@+id/urlUser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="left|center"
+                    android:lines="2"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:maxLength="30"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/linear_layout_onebackground"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:theme="@style/TextLabel"
+                android:text="Password"
+                android:textColor="@color/DrakGray_one"
+                tools:visibility="visible"/>
+
+                <EditText
+
+                    android:id="@+id/urlPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="left|center"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:maxLength="30"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/linear_layout_onebackground"
+                   />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp"
+            android:padding="9dp"
+            android:layout_marginTop="2dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:theme="@style/TextLabel"
+                android:text="Notes"
+                android:textColor="@color/DrakGray_one"
+                tools:visibility="visible"/>
+
+            <EditText
+                android:id="@+id/urlDiscription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:layout_marginTop="5dp"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:lines="3"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:maxLength="60"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:background="@drawable/linear_layout_onebackground"
+                android:minLines="3"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="2dp"
+
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                app:cardCornerRadius="25dp"
+                app:cardElevation="15dp">
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
